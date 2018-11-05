@@ -9,7 +9,7 @@ def markov_mappings(text, prefix_word_count):
 
 def markov_table(text, prefix_word_count):
     table = {}
-    for prefix, suffix in markov_mappings(text, prefix_word_count=4):
+    for prefix, suffix in markov_mappings(text, prefix_word_count):
         suffixes = table.get(prefix, [])
         if suffix:
             suffixes.append(suffix)
